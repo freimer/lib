@@ -128,6 +128,7 @@ type UpdateTaskRequest struct {
 	Permissions                *Permissions              `json:"permissions"`
 	ExecuteRules               UpdateExecuteRulesRequest `json:"executeRules"`
 	Timeout                    int                       `json:"timeout"`
+	TaskID			   *string                   `json:"taskID"`
 	BuildID                    *string                   `json:"buildID"`
 	InterpolationMode          *string                   `json:"interpolationMode"`
 	EnvSlug                    string                    `json:"envSlug"`
